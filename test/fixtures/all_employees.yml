@@ -1,0 +1,105 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.lohnmanager.malta.obfr-dev.de/LohnManagerService.svc/json/GetAllEmployees
+    body:
+      encoding: UTF-8
+      string: '{"apiKey":"XXX","companyNo":"-1"}'
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '2823'
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Thu, 09 Feb 2017 13:26:38 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJHZXRBbGxFbXBsb3llZXNSZXN1bHQiOlt7IkJpcnRoZGF5IjoiXC9EYXRl
+        KC04MTM5NjAwMDAwMCswMjAwKVwvIiwiQ29tcGFueU5vIjotMSwiRW1wbG95
+        ZWVObyI6MSwiRW50ZXJpbmdEYXRlIjoiXC9EYXRlKDE0NzUyNzI4MDAwMDAr
+        MDIwMClcLyIsIkV4aXREYXRlIjoiXC9EYXRlKDE0Nzc4Njg0MDAwMDArMDEw
+        MClcLyIsIkZpcnN0TmFtZSI6IkFuZHJlYSIsIklEIjozNzk0MCwiTGFzdE5h
+        bWUiOiJGZXN0Z2VoYWx0In0seyJCaXJ0aGRheSI6IlwvRGF0ZSg5ODI3OTY0
+        MDAwMDArMDEwMClcLyIsIkNvbXBhbnlObyI6LTEsIkVtcGxveWVlTm8iOjUs
+        IkVudGVyaW5nRGF0ZSI6IlwvRGF0ZSgxNDUxNjAyODAwMDAwKzAxMDApXC8i
+        LCJFeGl0RGF0ZSI6IlwvRGF0ZSgxNDc3ODY4NDAwMDAwKzAxMDApXC8iLCJG
+        aXJzdE5hbWUiOiJQYXVsIiwiSUQiOjM3OTQ5LCJMYXN0TmFtZSI6Ik1pbmlq
+        b2IifSx7IkJpcnRoZGF5IjoiXC9EYXRlKDE2MDYzMjAwMDAwKzAyMDApXC8i
+        LCJDb21wYW55Tm8iOi0xLCJFbXBsb3llZU5vIjoyLCJFbnRlcmluZ0RhdGUi
+        OiJcL0RhdGUoMTQ3NTI3MjgwMDAwMCswMjAwKVwvIiwiRXhpdERhdGUiOiJc
+        L0RhdGUoMTQ4MDQ2MDQwMDAwMCswMTAwKVwvIiwiRmlyc3ROYW1lIjoiUGV0
+        ZXIiLCJJRCI6MzgyMzIsIkxhc3ROYW1lIjoiS29jaCJ9LHsiQmlydGhkYXki
+        OiJcL0RhdGUoMTQ3NjkxNDQwMDAwMCswMjAwKVwvIiwiQ29tcGFueU5vIjot
+        MSwiRW1wbG95ZWVObyI6OCwiRW50ZXJpbmdEYXRlIjoiXC9EYXRlKDU2MTY3
+        OTIwMDAwMCswMjAwKVwvIiwiRXhpdERhdGUiOiJcL0RhdGUoMTQ4MTc1NjQw
+        MDAwMCswMTAwKVwvIiwiRmlyc3ROYW1lIjoiSGFucyIsIklEIjozOTc4Mywi
+        TGFzdE5hbWUiOiJHbMO8Y2sifSx7IkJpcnRoZGF5IjoiXC9EYXRlKDUzNjYy
+        NjgwMDAwMCswMTAwKVwvIiwiQ29tcGFueU5vIjotMSwiRW1wbG95ZWVObyI6
+        OTk4NzksIkVudGVyaW5nRGF0ZSI6IlwvRGF0ZSgxNDgwNTQ2ODAwMDAwKzAx
+        MDApXC8iLCJFeGl0RGF0ZSI6IlwvRGF0ZSgxNDkwOTExMjAwMDAwKzAyMDAp
+        XC8iLCJGaXJzdE5hbWUiOiJUaGVvIiwiSUQiOjQwOTI1LCJMYXN0TmFtZSI6
+        Ik11c3RlciJ9LHsiQmlydGhkYXkiOiJcL0RhdGUoMTYwNjMyMDAwMDArMDIw
+        MClcLyIsIkNvbXBhbnlObyI6LTEsIkVtcGxveWVlTm8iOjk5ODgwLCJFbnRl
+        cmluZ0RhdGUiOiJcL0RhdGUoMTQ4MDU0NjgwMDAwMCswMTAwKVwvIiwiRXhp
+        dERhdGUiOm51bGwsIkZpcnN0TmFtZSI6Ilp1c2NobMOkZ2UiLCJJRCI6NDEw
+        MDUsIkxhc3ROYW1lIjoiU3RldWVyZnJlaWUifSx7IkJpcnRoZGF5IjoiXC9E
+        YXRlKDUzNjYyNjgwMDAwMCswMTAwKVwvIiwiQ29tcGFueU5vIjotMSwiRW1w
+        bG95ZWVObyI6OTk4ODEsIkVudGVyaW5nRGF0ZSI6IlwvRGF0ZSgxNDgwNTQ2
+        ODAwMDAwKzAxMDApXC8iLCJFeGl0RGF0ZSI6bnVsbCwiRmlyc3ROYW1lIjoi
+        QXV0b21hdGlrIiwiSUQiOjQxMDA2LCJMYXN0TmFtZSI6IlBhdXNlbiJ9LHsi
+        QmlydGhkYXkiOiJcL0RhdGUoNTM2NjI2ODAwMDAwKzAxMDApXC8iLCJDb21w
+        YW55Tm8iOi0xLCJFbXBsb3llZU5vIjo5OTg4MywiRW50ZXJpbmdEYXRlIjoi
+        XC9EYXRlKDE0ODA1NDY4MDAwMDArMDEwMClcLyIsIkV4aXREYXRlIjpudWxs
+        LCJGaXJzdE5hbWUiOiJBdXRvbWF0aWsiLCJJRCI6NDEwNDUsIkxhc3ROYW1l
+        IjoiTWFobHplaXRlbiJ9LHsiQmlydGhkYXkiOiJcL0RhdGUoNTM2NjI2ODAw
+        MDAwKzAxMDApXC8iLCJDb21wYW55Tm8iOi0xLCJFbXBsb3llZU5vIjo5OTg4
+        NSwiRW50ZXJpbmdEYXRlIjoiXC9EYXRlKDE0ODMyMjUyMDAwMDArMDEwMClc
+        LyIsIkV4aXREYXRlIjpudWxsLCJGaXJzdE5hbWUiOiJUZXN0IiwiSUQiOjQx
+        Mjc5LCJMYXN0TmFtZSI6Ikdlc2FtdHN0dW5kZW4ifSx7IkJpcnRoZGF5Ijoi
+        XC9EYXRlKDU2MTY3OTIwMDAwMCswMjAwKVwvIiwiQ29tcGFueU5vIjotMSwi
+        RW1wbG95ZWVObyI6OTk4ODcsIkVudGVyaW5nRGF0ZSI6IlwvRGF0ZSgxNDgz
+        MjI1MjAwMDAwKzAxMDApXC8iLCJFeGl0RGF0ZSI6bnVsbCwiRmlyc3ROYW1l
+        IjoiVGVzdCIsIklEIjo0MTc3OSwiTGFzdE5hbWUiOiJQUFMgIn0seyJCaXJ0
+        aGRheSI6IlwvRGF0ZSg1NjE2NzkyMDAwMDArMDIwMClcLyIsIkNvbXBhbnlO
+        byI6LTEsIkVtcGxveWVlTm8iOjk5ODg5LCJFbnRlcmluZ0RhdGUiOiJcL0Rh
+        dGUoMTQ4MzIyNTIwMDAwMCswMTAwKVwvIiwiRXhpdERhdGUiOm51bGwsIkZp
+        cnN0TmFtZSI6IlRlc3RlIiwiSUQiOjQxNzg0LCJMYXN0TmFtZSI6Ik1haWxU
+        ZXN0In0seyJCaXJ0aGRheSI6IlwvRGF0ZSg1NjE2NzkyMDAwMDArMDIwMClc
+        LyIsIkNvbXBhbnlObyI6LTEsIkVtcGxveWVlTm8iOjk5ODkwLCJFbnRlcmlu
+        Z0RhdGUiOiJcL0RhdGUoMTQ4MzIyNTIwMDAwMCswMTAwKVwvIiwiRXhpdERh
+        dGUiOm51bGwsIkZpcnN0TmFtZSI6IlRlc3QiLCJJRCI6NDE3ODYsIkxhc3RO
+        YW1lIjoiQmV0YU1haWwifSx7IkJpcnRoZGF5IjoiXC9EYXRlKDUzNjYyNjgw
+        MDAwMCswMTAwKVwvIiwiQ29tcGFueU5vIjotMSwiRW1wbG95ZWVObyI6OTk4
+        OTEsIkVudGVyaW5nRGF0ZSI6IlwvRGF0ZSgxNDg1OTAzNjAwMDAwKzAxMDAp
+        XC8iLCJFeGl0RGF0ZSI6bnVsbCwiRmlyc3ROYW1lIjoiYXNkIiwiSUQiOjQx
+        Nzk3LCJMYXN0TmFtZSI6ImFkc2YifSx7IkJpcnRoZGF5IjoiXC9EYXRlKC04
+        MTM5NjAwMDAwMCswMjAwKVwvIiwiQ29tcGFueU5vIjotMSwiRW1wbG95ZWVO
+        byI6OTk4OTIsIkVudGVyaW5nRGF0ZSI6IlwvRGF0ZSgxNDg1OTAzNjAwMDAw
+        KzAxMDApXC8iLCJFeGl0RGF0ZSI6bnVsbCwiRmlyc3ROYW1lIjoiUGVyIiwi
+        SUQiOjQxODAyLCJMYXN0TmFtZSI6IkRlbmVja2UifV19
+    http_version:
+  recorded_at: Thu, 09 Feb 2017 13:26:46 GMT
+recorded_with: VCR 3.0.3
