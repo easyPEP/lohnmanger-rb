@@ -30,4 +30,21 @@ class EmployeesTimeRecordsTest < Minitest::Test
     end
   end
 
+  def test_create_employees_time_records_with_only_one_shift
+    VCR.use_cassette('create_employees_time_records_with_only_one_shift') do
+
+      time_records = [
+        {
+          "EmployeeNo": 5,
+          "RecordType": 0,
+          "RecordDate": "2016-12-01T00:00:00+01:00",
+          "Shift1_Start": "08:01",
+          "Shift1_End": "10:21",
+        }
+      ]
+      records = @client.create_employees_time_records(time_records)
+      assert_kind_of Array, records
+    end
+  end
+
 end

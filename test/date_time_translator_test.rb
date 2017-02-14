@@ -48,4 +48,23 @@ class DateTimeTranslatorTest < Minitest::Test
     assert_equal record[:Shift2_End], "PT23H22M"
   end
 
+  def test_single_time_records_to_wcf
+    time_records = [
+      {
+        "EmployeeNo": 5,
+        "RecordType": 0,
+        "RecordDate": "2016-12-01T00:00:00+01:00",
+        "Shift1_Start": "08:01",
+        "Shift1_End": "10:21",
+      }
+    ]
+    wcf_formatted = Lohnmanger::DateTimeTranslator.json_time_records_to_wcf(time_records)
+    record = wcf_formatted.first
+    assert_equal record[:RecordDate], "\/Date(1480546800000)/"
+    assert_equal record[:Shift1_Start], "PT8H1M"
+    assert_equal record[:Shift1_End], "PT10H21M"
+    assert_nil record[:Shift2_Start]
+    assert_nil record[:Shift2_End]
+  end
+
 end
