@@ -35,8 +35,8 @@ module Lohnmanger
           record[:RecordDate] = Lohnmanger::DateTimeTranslator.to_wcf(record[:RecordDate])
           record[:Shift1_Start] = Lohnmanger::DateTimeTranslator.time_to_wcf(record[:Shift1_Start])
           record[:Shift1_End] = Lohnmanger::DateTimeTranslator.time_to_wcf(record[:Shift1_End])
-          record[:Shift2_Start] = Lohnmanger::DateTimeTranslator.time_to_wcf(record[:Shift2_Start])
-          record[:Shift2_End] = Lohnmanger::DateTimeTranslator.time_to_wcf(record[:Shift2_End])
+          record[:Shift2_Start] = Lohnmanger::DateTimeTranslator.time_to_wcf(record[:Shift2_Start]) if record[:Shift2_Start]
+          record[:Shift2_End] = Lohnmanger::DateTimeTranslator.time_to_wcf(record[:Shift2_End]) if record[:Shift2_End]
           record
         end
       end
