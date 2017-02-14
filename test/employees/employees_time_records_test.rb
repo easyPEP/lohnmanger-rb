@@ -16,20 +16,18 @@ class EmployeesTimeRecordsTest < Minitest::Test
 
       time_records = [
         {
-          "EmployeeNo":5,
-          "RecordType":0,
-          "RecordDate":"\/Date(1480546800000+0100)\/",
-          "Shift1_Start":"PT1H10M",
-          "Shift1_End":"PT2H25M",
-          "Shift2_Start":"PT22H23M",
-          "Shift2_End":"PT23H30M"
+          "EmployeeNo": 5,
+          "RecordType": 0,
+          "RecordDate": "2016-12-01T00:00:00+01:00",
+          "Shift1_Start": "08:01",
+          "Shift1_End": "10:21",
+          "Shift2_Start": "14:30",
+          "Shift2_End": "23:22"
         }
       ]
-
       records = @client.create_employees_time_records(time_records)
       assert_kind_of Array, records
     end
   end
 
 end
-

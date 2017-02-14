@@ -27,4 +27,3 @@ class LohnmangerEmployeeTest < Minitest::Test
   end
 
 end
-

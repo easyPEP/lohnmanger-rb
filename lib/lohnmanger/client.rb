@@ -1,11 +1,13 @@
 require 'sawyer'
 require_relative 'configurable'
+require_relative 'date_time_translator'
 require_relative 'client/employees'
 require_relative 'client/employees_time_records'
 
 module Lohnmanger
 
   class Client
+    include Lohnmanger::DateTimeTranslator
     include Lohnmanger::Configurable
     include Lohnmanger::Client::Employees
     include Lohnmanger::Client::EmployeesTimeRecords
