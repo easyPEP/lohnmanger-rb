@@ -40,4 +40,3 @@ class LohnmangerTest < Minitest::Test
   end
 
 end
-
