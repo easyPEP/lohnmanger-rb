@@ -1,3 +1,7 @@
+## 0.0.4.beta (February 14, 2017)
+
+Alow only on shift to be syncable
+
 ## 0.0.2.beta (February 14, 2017)
 
 Add missing dependency
