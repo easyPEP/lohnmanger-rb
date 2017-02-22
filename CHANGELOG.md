@@ -1,3 +1,7 @@
+## 0.0.5.beta (Februar 22, 2017)
+
+Return raw api response
+
 ## 0.0.4.beta (February 14, 2017)
 
 Alow only on shift to be syncable
