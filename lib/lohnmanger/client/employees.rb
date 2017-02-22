@@ -8,8 +8,7 @@ module Lohnmanger
       end
 
       def employee(employee_id)
-      	result = post('GetEmployeeByNo', EmployeeNo: employee_id)
-      	result['GetEmployeeByNoResult']
+      	post('GetEmployeeByNo', EmployeeNo: employee_id)
       end
 
     end

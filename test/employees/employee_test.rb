@@ -20,7 +20,7 @@ class LohnmangerEmployeeTest < Minitest::Test
 
   def test_returns_employee_by_number
     VCR.use_cassette('employee_by_number') do
-      employee = @client.employee(99892)
+      employee = @client.employee(99892)[:GetEmployeeByNoResult]
       assert_kind_of Sawyer::Resource, employee
       assert_equal 99892, employee.EmployeeNo
     end

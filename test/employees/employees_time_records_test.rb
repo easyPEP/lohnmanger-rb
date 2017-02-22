@@ -26,7 +26,7 @@ class EmployeesTimeRecordsTest < Minitest::Test
         }
       ]
       records = @client.create_employees_time_records(time_records)
-      assert_kind_of Array, records
+      assert_kind_of Array, records[:UpdateEmployeesTimeRecordsResult]
     end
   end
 
@@ -43,7 +43,7 @@ class EmployeesTimeRecordsTest < Minitest::Test
         }
       ]
       records = @client.create_employees_time_records(time_records)
-      assert_kind_of Array, records
+      assert_kind_of Array, records[:UpdateEmployeesTimeRecordsResult]
     end
   end
 
