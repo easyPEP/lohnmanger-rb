@@ -24,8 +24,7 @@ module Lohnmanger
       # ]
       # options => Array[]
       def create_employees_time_records(options = {})
-        result = post('UpdateEmployeesTimeRecords', {TimeRecords: Lohnmanger::DateTimeTranslator.json_time_records_to_wcf(options)})
-        result['UpdateEmployeesTimeRecordsResult']
+        post('UpdateEmployeesTimeRecords', {TimeRecords: Lohnmanger::DateTimeTranslator.json_time_records_to_wcf(options)})
       end
 
     end
