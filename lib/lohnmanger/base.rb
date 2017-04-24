@@ -1,7 +1,7 @@
 require 'faraday'
 require 'json'
 
-BASE_API_URL = "http://api.lohnmanager.malta.obfr-dev.de/LohnManagerService.svc/json"
+BASE_API_URL = "https://api.lohnmanager.info/LohnManagerService.svc/json"
 
 module Lohnmanger
   class Base
