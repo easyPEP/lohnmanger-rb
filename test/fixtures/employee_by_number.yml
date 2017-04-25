@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.lohnmanager.malta.obfr-dev.de/LohnManagerService.svc/json/GetEmployeeByNo
+    uri: https://api.lohnmanager.info/LohnManagerService.svc/json/GetEmployeeByNo
     body:
       encoding: UTF-8
-      string: '{"EmployeeNo":99892,"apiKey":"XXX","companyNo":"-1"}'
+      string: '{"EmployeeNo":99892,"apiKey":"LtW496WYnOKDjXgqdnbSz7TJaiDemvKCCxA8HzOOFqaeg7KLTpQq8XvdaMur2ibrDHBlXHje8XMIxe3C","companyNo":"-1"}'
     headers:
       User-Agent:
       - Faraday v0.11.0
@@ -33,10 +33,10 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Date:
-      - Thu, 09 Feb 2017 13:26:38 GMT
+      - Tue, 25 Apr 2017 06:17:00 GMT
     body:
       encoding: UTF-8
       string: '{"GetEmployeeByNoResult":{"Birthday":"\/Date(-81396000000+0200)\/","CompanyNo":-1,"EmployeeNo":99892,"EnteringDate":"\/Date(1485903600000+0100)\/","ExitDate":null,"FirstName":"Per","ID":41802,"LastName":"Denecke"}}'
-    http_version:
-  recorded_at: Thu, 09 Feb 2017 13:26:45 GMT
+    http_version: 
+  recorded_at: Tue, 25 Apr 2017 06:17:02 GMT
 recorded_with: VCR 3.0.3
