@@ -12,7 +12,7 @@ module Lohnmanger
       end
 
       def api_endpoint
-        ENV['LOHNMANAGER_API_ENDPOINT'] || "http://api.lohnmanager.malta.obfr-dev.de/LohnManagerService.svc/json"
+        ENV['LOHNMANAGER_API_ENDPOINT'] || "https://api.lohnmanager.info/LohnManagerService.svc/json"
       end
 
       # Default access token from ENV
