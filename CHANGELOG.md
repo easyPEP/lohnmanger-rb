@@ -1,3 +1,7 @@
+## 0.0.7.beta (April 25, 2017)
+
+new API url with ssl
+
 ## 0.0.5.beta (Februar 22, 2017)
 
 Return raw api response
